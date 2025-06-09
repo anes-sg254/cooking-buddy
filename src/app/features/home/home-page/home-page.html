@@ -1,0 +1,23 @@
+<app-page-layout>
+  <h1>Recettes : {{ selectedCategory() }}</h1>
+
+  <ul>
+    @for (cat of categories(); track cat) {
+      <li>
+        <button (click)="selectedCategory.set(cat)">
+          {{ cat }}
+        </button>
+      </li>
+    }
+  </ul>
+
+  @if (recipes().length) {
+    @for (meal of recipes(); track meal.strMeal) {
+      <div>
+        {{ meal.strMeal }}
+      </div>
+    }
+  } @else {
+    <p>Chargement des recettes...</p>
+  }
+</app-page-layout>
