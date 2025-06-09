@@ -1,4 +1,4 @@
-import { AbstractControl, ValidationErrors, ValidatorFn } from "@angular/forms";
+import { ValidatorFn, AbstractControl, ValidationErrors } from '@angular/forms';
 
 export function passwordMatchValidator(passwordField: string, confirmPasswordField: string): ValidatorFn {
     return (control: AbstractControl): ValidationErrors | null => {

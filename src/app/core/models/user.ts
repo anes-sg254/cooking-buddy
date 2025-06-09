@@ -6,16 +6,16 @@ export interface User {
   lastName: string;
   createdAt: Date;
 }
-
+ 
 export interface ReadOnlyUser extends Omit<User, 'password'> {}
-
+ 
 export interface CreateUserDto {
   email: string;
   password: string;
   firstName: string;
   lastName: string;
 }
-
+ 
 export interface LoginResponse {
   user: User;
   token: string;

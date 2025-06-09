@@ -91,7 +91,7 @@ mat-card-actions {
   }
 }
 
-
+// Responsive design
 @media (max-width: 600px) {
   .register-container {
     padding: 10px;
@@ -107,13 +107,13 @@ mat-card-actions {
   }
 }
 
-
+// Styles pour les snackbars
 ::ng-deep .success-snackbar {
-  background-color: #4caf50 ;
-  color: white ;
+  background-color: #4caf50 !important;
+  color: white !important;
 }
 
 ::ng-deep .error-snackbar {
-  background-color: #f44336;
-  color: white ;
+  background-color: #f44336 !important;
+  color: white !important;
 }
